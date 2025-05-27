@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toggle Dark Mode Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg custom-navbar shadow-lg" data-aos="fade-down">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <img src="gambar/logo_portofolio-removebg-preview.png" alt="Logo" class="logo-img me-2">
+        <span class="navbar-brand mb-0">PORTFOLIO</span>
+      </div>
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center me-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-sm btn-warning">💙 Dark Blue</button>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Home Section -->
+<section id="home" class="home-section d-flex align-items-center justify-content-center text-center">
+  <div class="overlay"></div>
+  <div class="container position-relative text-white">
+    <h1 class="display-4 fw-bold" data-aos="fade-up"><p>Helloo!!!</p> Welcome to the Portfolio Website <p>Rafifah Asilah</p></h1>
+    
+    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+     I am a web developer focused on responsive design and engaging user experiences.
+    </p>
+  </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+  
+  <!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center align-items-center shadow-lg rounded p-4 bg-light" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="200">
+        <img src="gambar/gambar 2.jpeg" alt="Foto Saya" class="img-fluid rounded-circle shadow-lg profile-img">
+      </div>
+      <div class="col-md-8" data-aos="fade-left" data-aos-delay="400">
+        <h2 class="mb-3 fw-bold custom-title">About Me</h2>
+        I'm Rafifah Asilah, a professional <span class= "text-primary fw-semibold">Web Developer</span>  focused on building modern, 
+        responsive, and user-friendly websites. With experience in developing various digital projects, I'm well-versed in technologies such as HTML, CSS, 
+        JavaScript, along with a range of frameworks and supporting tools to create web interfaces that are both visually appealing and highly functional.</p>
+        <p id="moreText" class="d-none">For me, a website is not just about design, but about how the website provides the best experience for users. 
+        With a strong passion for continuous learning and development, I am committed to providing high-quality, efficient, and future-ready digital 
+        solutions that are in line with today's needs.</p>
+        <button class="btn btn-outline-primary mt-3" onclick="showMore()">Selengkapnya</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Skill Section -->
+<section class="container my-5" id="skills">
+  <h2 class="text-center mb-4">My Skills</h2>
+  <div class="row">
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">HTML</h5>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" data-skill="95" style="width: 0%">0%</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">CSS</h5>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" data-skill="95" style="width: 0%">0%</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">Desain UI/UX</h5>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" data-skill="85" style="width: 0%">0%</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">Bootstrap</h5>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" data-skill="85" style="width: 0%">0%</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">PHP</h5>
+      <div class="progress">
+        <div class="progress-bar bg-primary" role="progressbar" data-skill="90" style="width: 0%">0%</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">Java Script</h5>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" data-skill="85" style="width: 0%">0%</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">Python</h5>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" data-skill="95" style="width: 0%">0%</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 mb-3">
+      <h5 class="text-center">MySQL</h5>
+      <div class="progress">
+        <div class="progress-bar bg-primary" role="progressbar" data-skill="90" style="width: 0%">0%</div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+
+
+<!-- Layanan Section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<section class="layanan">
+  <div class="container">
+    <div class="card">
+      <h2><i class="fas fa-code"></i> Programming</h2>
+      <p>Mastering languages ​​such as Java, Python, and PHP to create web and desktop-based applications.</p>
+    </div>
+    <div class="card">
+      <h2><i class="fas fa-pencil-ruler"></i> UI/UX Design</h2>
+      <p>Create an application display that is attractive, easy to use, and oriented towards user experience.</p>
+    </div>
+    <div class="card">
+      <h2><i class="fas fa-database"></i> Database</h2>
+      <p>Manage and design databases with MySQL, PostgreSQL, and MongoDB.</p>
+    </div>
+    <div class="card">
+      <h2><i class="fas fa-network-wired"></i> Computer network</h2>
+      <p>Understand the basics of computer networking and small-scale network device configuration.</p>
+    </div>
+    <div class="card">
+      <h2><i class="fas fa-globe"></i> Web Development</h2>
+      <p>Create websites using HTML, CSS, JavaScript, and modern frameworks like Laravel.</p>
+    </div>
+    <div class="card">
+      <h2><i class="fas fa-tasks"></i> Systems Analysis</h2>
+      <p>Analyze user needs and design appropriate software solutions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="about-section custom-padding-top" id="projects"> 
+  <div class="container-fluid px-5">
+   <h2 class="text-center mb-4 project-title">My Project</h2>
+    <div class="row">
+
+      <!-- Project Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img src="gambar/teh.jpeg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Website Tea</h5>
+            <p class="card-text">This website is a site that displays various types of tea and information about tea. 
+            This site is suitable for tea lovers who want to learn more or find quality tea products.</p>
+            <a href="file:///D:/website%20teh/index.html" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img src="gambar/berita.jpeg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">News Website</h5>
+            <p class="card-text">This website is a media for information and education regarding 
+            the history of the arrival of Hindu-Buddhist religion and culture in Indonesia.</p>
+            <a href="file:///D:/pk/projek.html#kritik" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img src="gambar/trevel.jpeg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Travel Website</h5>
+            <p class="card-text">PrimeWay Travel website is a travel website that features beautiful tourist destinations such as Raja Ampat. 
+            This site is intended for nature and adventure lovers from all over the world.</p>
+            <a href="file:///D:/tugas%201%20(travel)/Bootstrap/IMAGE-20250211T010335Z-001/IMAGE/index.html" class="btn btn-primary"> View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img src="gambar/shopping.jpeg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Website E-Commerce</h5>
+            <p class="card-text">The website contains an online fashion store called ATTIRE with a modern look, displaying the latest collections and easy navigation for shopping.</p>
+            <a href="file:///D:/tugas%202%20(store)/index.html" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img src="gambar/home rumah sakit.png" class="card-img-top" alt="Project 5">
+          <div class="card-body">
+            <h5 class="card-title">Website Hospital</h5>
+            <p class="card-text">This website is the main page of Dr. Kariadi Hospital which provides important 
+            information such as services, health articles, contacts, and doctor profiles.</p>
+            <a href="file:///D:/tugas%203%20(rumah%20sakit)/index.html" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <img src="gambar/home concert.png" class="card-img-top" alt="Project 6">
+          <div class="card-body">
+            <h5 class="card-title">Website Ticket Concert</h5>
+            <p class="card-text">This website is the main page of Mahalini's solo concert which displays
+            brief information about the concert and to buy tickets directly.</p>
+            <a href="file:///D:/web%20konser/index.html" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--Contact-->
+<section class="container my-5" id="contact">
+<div class="contact-outer">
+  <div class="contact-card">
+      <div class="image-container">
+          <!-- Gambar lokal -->
+          <img src="gambar/gambar cont.jpeg" alt="Contact Image" class="contact-image">
+      </div>
+      <div class="form-container">
+         <h2 class="contact-title">Contact Us</h2>
+          <form>
+              <input type="text" class="neon-input" placeholder="Your Name">
+              <input type="email" class="neon-input" placeholder="Your Email">
+              <input type="telpn" class="neon-input" placeholder="Your Phone">
+              <textarea class="neon-input" placeholder="Your Message"></textarea>
+              <button class="glow-btn">Submit</button>
+          </form>
+      </div>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+  <footer class="footer-modern text-white mt-5">
+    <div class="footer-top py-5">
+      <div class="container">
+       <div class="row text-center text-md-start align-items-start g-4">
+          <!-- Ucapan Terima Kasih -->
+          <div class="col-md-3 mb-4">
+            <h5 class="fw-bold">Thank You 🙏</h5>
+            <p>Thank you for visiting my portfolio. Have a wonderful day!</p>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="col-md-3 mb-4">
+            <h5>Navigation</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="footer-link">🏠 Home</a></li>
+              <li><a href="#about" class="footer-link">👤 About Us</a></li>
+              <li><a href="#skill" class="footer-link">😎 Skill</a></li>
+              <li><a href="#projects" class="footer-link">🛠️ Project</a></li>
+              <li><a href="#contact" class="footer-link">📞 Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Media Sosial -->
+          <div class="col-md-3 mb-4">
+            <h5>Follow Me</h5>
+            <div class="d-flex flex-column gap-2">
+              <a href="https://www.instagram.com/2aaliaa0" class="footer-icon" target="_blank">
+                <i class="bi bi-instagram"></i> @2aaliaa0
+              </a>
+              <a href="https://www.tiktok.com/@Raaa03756" class="footer-icon" target="_blank">
+                <i class="bi bi-tiktok"></i> @Raaa03756
+              </a>
+            </div>
+          </div>
+
+          <!-- Info & Tanggal -->
+          <div class="col-md-3 mb-4">
+            <h5>Information</h5>
+            <p id="footer-date" class="mb-1">Dete Created: </p>
+            <p>Mde on May 6-16❤️</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center py-3">
+      <p class="mb-0">&copy; <span id="year"></span>my portfolio. rafifah asilah.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init(); // Inisialisasi AOS
+</script>
+
+</body>
+</html>
